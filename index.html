@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="css/reset.css">
+	<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;300;400;500;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<title>GO SURF</title>
+</head>
+<body>
+	
+	<div class="wrapper">
+		
+		<header class="header">
+			<div class="menu">
+				<a href="#" class="logo">
+					Go <span>surf</span>
+					<div class="logo__rectangle"></div>
+				</a>
+				<div class="menu__inner">
+					<nav class="nav">
+						<a href="#surf" class="nav__item">
+							<img src="images/surf.svg" alt="" class="nav__item-img">
+							<span class="nav__item-text">Surf</span>
+						</a>
+						<a href="#travel" class="nav__item">
+							<img src="images/travel.svg" alt="" class="nav__item-img">
+							<span class="nav__item-text">Travel</span>
+						</a>
+						<a href="#sleep" class="nav__item">
+							<img src="images/camp.svg" alt="" class="nav__item-img">
+							<span class="nav__item-text">Sleep</span>
+						</a>
+						<a href="#shop" class="nav__item">
+							<img src="images/shop.svg" alt="" class="nav__item-img">
+							<span class="nav__item-text">Shop</span>
+						</a>
+						<a href="#" class="nav__item">
+							<img src="images/search.svg" alt="" class="nav__item-img">
+						</a>
+					</nav>
+					<div class="menu__date">
+						<span id="day" class="menu__date-day"></span>
+						<span class="menu__date-date"></span>
+					</div>
+					<a href="https://maps.app.goo.gl/iV6ZB9sbngbBTsgQ9" class="menu__loc">
+						California
+					</a>
+				</div>
+				
+			</div>
+			<button class="section-arrow">
+				<img src="images/section-arrows.svg" alt="">
+			</button>
+		</header>
+
+		<section class="intro">
+			<h1 class="intro__title">Go surf</h1>
+			<div class="intro__slider">
+				<div data-title="north shore" data-index="1" class="intro__slider-item" style="background-image: url(images/intro-1.jpg)">
+					<img src="images/map.svg" alt="" class="intro__slider-map">
+					<div class="intro__slider-content">
+						<h3 class="intro__slider-suptitle suptitle">Surf</h3>
+						<h1 class="intro__slider-title">north shore</h1>
+						<h3 class="intro__slider-suptitle suptitle">Condition</h3>
+						<a href="#" class="intro__slider-subtitle subtitle">Radical</a>
+					</div>
+				</div>
+				<div data-title="south shore" data-index="2" class="intro__slider-item" style="background-image: url(images/intro-2.jpg)">
+					<img src="images/map.svg" alt="" class="intro__slider-map">
+					<div class="intro__slider-content">
+						<h3 class="intro__slider-suptitle suptitle">Surf</h3>
+						<h1 class="intro__slider-title">south shore</h1>
+						<h3 class="intro__slider-suptitle suptitle">Condition</h3>
+						<h2 class="intro__slider-subtitle subtitle">Radical</h2>
+					</div>
+				</div>
+				<div data-title="west shore" data-index="3" class="intro__slider-item" style="background-image: url(images/intro-3.jpg)">
+					<img src="images/map.svg" alt="" class="intro__slider-map">
+					<div class="intro__slider-content">
+						<h3 class="intro__slider-suptitle suptitle">Surf</h3>
+						<h1 class="intro__slider-title">west shore</h1>
+						<h3 class="intro__slider-suptitle suptitle">Condition</h3>
+						<h2 class="intro__slider-subtitle subtitle">Radical</h2>
+					</div>
+				</div>
+				<div data-title="east shore" data-index="4" class="intro__slider-item" style="background-image: url(images/intro-4.jpg)">
+					<img src="images/map.svg" alt="" class="intro__slider-map">
+					<div class="intro__slider-content">
+						<h3 class="intro__slider-suptitle suptitle">Surf</h3>
+						<h1 class="intro__slider-title">east shore</h1>
+						<h3 class="intro__slider-suptitle suptitle">Condition</h3>
+						<h2 class="intro__slider-subtitle subtitle">Radical</h2>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="surf" class="surf">
+			<h1 class="surf__title title">Surf</h1>
+			<h2 class="surf__title-subtitle title-subtitle">Surf</h2>
+			<img src="images/surf-big-loc.svg" alt="" class="surf__img">
+
+			<div class="surf__suptitle suptitle">Current location</div>
+			<div class="surf__subtitle subtitle">California | USA</div>
+
+			<div class="container">
+				<div class="surf__inner">
+					<div class="surf__map">
+						<img src="images/surf-loc.svg" alt="" class="surf__img-small">
+						<div class="surf__map-loc">
+							<button class="surf__map-dot surf__map-dot-first"></button>
+
+							<div class="surf__map-card surf__map-card-first">
+								<a href="#" class="surf__map-title">
+									<h3 class="surf__map-name">Hawaii Beach</h3>
+									<img src="images/white-arrow.svg" alt="" class="surf__map-arrow">
+								</a>
+								<h3 class="surf__map-subtitle">USA</h3>
+								<ul class="surf__map-list">
+									<li class="surf__map-item">
+										<img src="images/map-surf.svg" alt="" class="surf__map-img">
+										<div class="surf__map-descr">9 - 13</div>
+										<div class="surf__map-add">Surf (FT)</div>
+									</li>
+									<li class="surf__map-item">
+										<img src="images/map-water.svg" alt="" class="surf__map-img">
+										<div class="surf__map-descr">+2.3</div>
+										<div class="surf__map-add">Tide (FT)</div>
+									</li>
+									<li class="surf__map-item">
+										<img src="images/map-wind.svg" alt="" class="surf__map-img">
+										<div class="surf__map-descr">4 SE</div>
+										<div class="surf__map-add">Wind (KTS)</div>
+									</li>
+								</ul>
+								<div class="surf__map-coord vertical">34.0501 N -118.2446 W</div>
+							</div>
+						</div>
+						<div class="surf__map-loc">
+							<button class="surf__map-dot surf__map-dot-second"></button>
+
+							<div class="surf__map-card surf__map-card-second">
+								<a href="#" class="surf__map-title">
+									<h3 class="surf__map-name">Malibu Beach</h3>
+									<img src="images/white-arrow.svg" alt="" class="surf__map-arrow">
+								</a>
+								<h3 class="surf__map-subtitle">USA</h3>
+								<ul class="surf__map-list">
+									<li class="surf__map-item">
+										<img src="images/map-surf.svg" alt="" class="surf__map-img">
+										<div class="surf__map-descr">9 - 13</div>
+										<div class="surf__map-add">Surf (FT)</div>
+									</li>
+									<li class="surf__map-item">
+										<img src="images/map-water.svg" alt="" class="surf__map-img">
+										<div class="surf__map-descr">+2.3</div>
+										<div class="surf__map-add">Tide (FT)</div>
+									</li>
+									<li class="surf__map-item">
+										<img src="images/map-wind.svg" alt="" class="surf__map-img">
+										<div class="surf__map-descr">4 SE</div>
+										<div class="surf__map-add">Wind (KTS)</div>
+									</li>
+								</ul>
+								<div class="surf__map-coord vertical">34.0501 N -118.2446 W</div>
+							</div>
+						</div>
+						<div class="surf__map-loc">
+							<button class="surf__map-dot surf__map-dot-third"></button>
+
+							<div class="surf__map-card surf__map-card-third">
+								<a href="#" class="surf__map-title">
+									<h3 class="surf__map-name">Caribbean Beach</h3>
+									<img src="images/white-arrow.svg" alt="" class="surf__map-arrow">
+								</a>
+								<h3 class="surf__map-subtitle">Cuba</h3>
+								<ul class="surf__map-list">
+									<li class="surf__map-item">
+										<img src="images/map-surf.svg" alt="" class="surf__map-img">
+										<div class="surf__map-descr">9 - 13</div>
+										<div class="surf__map-add">Surf (FT)</div>
+									</li>
+									<li class="surf__map-item">
+										<img src="images/map-water.svg" alt="" class="surf__map-img">
+										<div class="surf__map-descr">+2.3</div>
+										<div class="surf__map-add">Tide (FT)</div>
+									</li>
+									<li class="surf__map-item">
+										<img src="images/map-wind.svg" alt="" class="surf__map-img">
+										<div class="surf__map-descr">4 SE</div>
+										<div class="surf__map-add">Wind (KTS)</div>
+									</li>
+								</ul>
+								<div class="surf__map-coord vertical">34.0501 N -118.2446 W</div>
+							</div>
+						</div>
+						<div class="surf__map-loc">
+							<button class="surf__map-dot surf__map-dot-fourth"></button>
+
+							<div class="surf__map-card surf__map-card-fourth">
+								<a href="#" class="surf__map-title">
+									<h3 class="surf__map-name">Guaruja Beach</h3>
+									<img src="images/white-arrow.svg" alt="" class="surf__map-arrow">
+								</a>
+								<h3 class="surf__map-subtitle">Brazil</h3>
+								<ul class="surf__map-list">
+									<li class="surf__map-item">
+										<img src="images/map-surf.svg" alt="" class="surf__map-img">
+										<div class="surf__map-descr">9 - 13</div>
+										<div class="surf__map-add">Surf (FT)</div>
+									</li>
+									<li class="surf__map-item">
+										<img src="images/map-water.svg" alt="" class="surf__map-img">
+										<div class="surf__map-descr">+2.3</div>
+										<div class="surf__map-add">Tide (FT)</div>
+									</li>
+									<li class="surf__map-item">
+										<img src="images/map-wind.svg" alt="" class="surf__map-img">
+										<div class="surf__map-descr">4 SE</div>
+										<div class="surf__map-add">Wind (KTS)</div>
+									</li>
+								</ul>
+								<div class="surf__map-coord vertical">34.0501 N -118.2446 W</div>
+							</div>
+						</div>
+						<div class="surf__map-loc">
+							<button class="surf__map-dot surf__map-dot-fifth"></button>
+
+							<div class="surf__map-card surf__map-card-fifth">
+								<a href="#" class="surf__map-title">
+									<h3 class="surf__map-name">Vieux Boucau</h3>
+									<img src="images/white-arrow.svg" alt="" class="surf__map-arrow">
+								</a>
+								<h3 class="surf__map-subtitle">France</h3>
+								<ul class="surf__map-list">
+									<li class="surf__map-item">
+										<img src="images/map-surf.svg" alt="" class="surf__map-img">
+										<div class="surf__map-descr">9 - 13</div>
+										<div class="surf__map-add">Surf (FT)</div>
+									</li>
+									<li class="surf__map-item">
+										<img src="images/map-water.svg" alt="" class="surf__map-img">
+										<div class="surf__map-descr">+2.3</div>
+										<div class="surf__map-add">Tide (FT)</div>
+									</li>
+									<li class="surf__map-item">
+										<img src="images/map-wind.svg" alt="" class="surf__map-img">
+										<div class="surf__map-descr">4 SE</div>
+										<div class="surf__map-add">Wind (KTS)</div>
+									</li>
+								</ul>
+								<div class="surf__map-coord vertical">34.0501 N -118.2446 W</div>
+							</div>
+						</div>
+						<div class="surf__map-loc">
+							<button class="surf__map-dot surf__map-dot-sixth"></button>
+
+							<div class="surf__map-card surf__map-card-sixth">
+								<a href="#" class="surf__map-title">
+									<h3 class="surf__map-name">Amatola Beach</h3>
+									<img src="images/white-arrow.svg" alt="" class="surf__map-arrow">
+								</a>
+								<h3 class="surf__map-subtitle">South Africa</h3>
+								<ul class="surf__map-list">
+									<li class="surf__map-item">
+										<img src="images/map-surf.svg" alt="" class="surf__map-img">
+										<div class="surf__map-descr">9 - 13</div>
+										<div class="surf__map-add">Surf (FT)</div>
+									</li>
+									<li class="surf__map-item">
+										<img src="images/map-water.svg" alt="" class="surf__map-img">
+										<div class="surf__map-descr">+2.3</div>
+										<div class="surf__map-add">Tide (FT)</div>
+									</li>
+									<li class="surf__map-item">
+										<img src="images/map-wind.svg" alt="" class="surf__map-img">
+										<div class="surf__map-descr">4 SE</div>
+										<div class="surf__map-add">Wind (KTS)</div>
+									</li>
+								</ul>
+								<div class="surf__map-coord vertical">34.0501 N -118.2446 W</div>
+							</div>
+						</div>
+						<div class="surf__map-loc">
+							<button class="surf__map-dot surf__map-dot-seventh"></button>
+
+							<div class="surf__map-card surf__map-card-seventh">
+								<a href="#" class="surf__map-title">
+									<h3 class="surf__map-name">Maradhoo Beach</h3>
+									<img src="images/white-arrow.svg" alt="" class="surf__map-arrow">
+								</a>
+								<h3 class="surf__map-subtitle">Maldives</h3>
+								<ul class="surf__map-list">
+									<li class="surf__map-item">
+										<img src="images/map-surf.svg" alt="" class="surf__map-img">
+										<div class="surf__map-descr">9 - 13</div>
+										<div class="surf__map-add">Surf (FT)</div>
+									</li>
+									<li class="surf__map-item">
+										<img src="images/map-water.svg" alt="" class="surf__map-img">
+										<div class="surf__map-descr">+2.3</div>
+										<div class="surf__map-add">Tide (FT)</div>
+									</li>
+									<li class="surf__map-item">
+										<img src="images/map-wind.svg" alt="" class="surf__map-img">
+										<div class="surf__map-descr">4 SE</div>
+										<div class="surf__map-add">Wind (KTS)</div>
+									</li>
+								</ul>
+								<div class="surf__map-coord vertical">34.0501 N -118.2446 W</div>
+							</div>
+						</div>
+						<div class="surf__map-loc">
+							<button class="surf__map-dot surf__map-dot-eighth"></button>
+
+							<div class="surf__map-card surf__map-card-eighth">
+								<a href="#" class="surf__map-title">
+									<h3 class="surf__map-name">Airlie Beach</h3>
+									<img src="images/white-arrow.svg" alt="" class="surf__map-arrow">
+								</a>
+								<h3 class="surf__map-subtitle">Australia</h3>
+								<ul class="surf__map-list">
+									<li class="surf__map-item">
+										<img src="images/map-surf.svg" alt="" class="surf__map-img">
+										<div class="surf__map-descr">9 - 13</div>
+										<div class="surf__map-add">Surf (FT)</div>
+									</li>
+									<li class="surf__map-item">
+										<img src="images/map-water.svg" alt="" class="surf__map-img">
+										<div class="surf__map-descr">+2.3</div>
+										<div class="surf__map-add">Tide (FT)</div>
+									</li>
+									<li class="surf__map-item">
+										<img src="images/map-wind.svg" alt="" class="surf__map-img">
+										<div class="surf__map-descr">4 SE</div>
+										<div class="surf__map-add">Wind (KTS)</div>
+									</li>
+								</ul>
+								<div class="surf__map-coord vertical">34.0501 N -118.2446 W</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="view-surf">
+			<div class="view-surf__slider">
+				<div class="view-surf__slider-item" style="background-image: url(images/surfSlide-1.jpg)" id="view-1">
+					<h2 class="view-surf__slider-title">Malibu Beach</h2>
+					<div class="view-surf__slider-loc vertical">California | USA</div>
+					<a href="#" class="view-surf__slider-link section__link">
+						view <span>surf</span>
+						<div class="view-surf__slider-rectangle section__link-rectangle"></div>
+					</a>
+				</div>
+				<div class="view-surf__slider-item" style="background-image: url(images/surfSlide-2.jpg)" id="view-2">
+					<h2 class="view-surf__slider-title">Airlie Beach</h2>
+					<div class="view-surf__slider-loc vertical">Queensland | Australia</div>
+					<a href="#" class="view-surf__slider-link section__link">
+						view <span>surf</span>
+						<div class="view-surf__slider-rectangle section__link-rectangle"></div>
+					</a>
+				</div>
+				<div class="view-surf__slider-item" style="background-image: url(images/surfSlide-3.jpg)" id="view-3">
+					<h2 class="view-surf__slider-title">Cloud Nine</h2>
+					<div class="view-surf__slider-loc vertical">Siargao | Philippines</div>
+					<a href="#" class="view-surf__slider-link section__link">
+						view <span>surf</span>
+						<div class="view-surf__slider-rectangle section__link-rectangle"></div>
+					</a>
+				</div>
+				<div class="view-surf__slider-item" style="background-image: url(images/surfSlide-4.jpg)" id="view-4">
+					<h2 class="view-surf__slider-title">Vieux Boucau</h2>
+					<div class="view-surf__slider-loc vertical">Hossegor | France</div>
+					<a href="#" class="view-surf__slider-link section__link">
+						view <span>surf</span>
+						<div class="view-surf__slider-rectangle section__link-rectangle"></div>
+					</a>
+				</div>
+				<div class="view-surf__slider-item" style="background-image: url(images/surfSlide-5.jpg)" id="view-5">
+					<h2 class="view-surf__slider-title">Hawaii Beach</h2>
+					<div class="view-surf__slider-loc vertical">Koloa | USA</div>
+					<a href="#" class="view-surf__slider-link section__link">
+						view <span>surf</span>
+						<div class="view-surf__slider-rectangle section__link-rectangle"></div>
+					</a>
+				</div>
+				<div class="view-surf__slider-item" style="background-image: url(images/surfSlide-6.jpg)" id="view-6">
+					<h2 class="view-surf__slider-title">Maradhoo Beach</h2>
+					<div class="view-surf__slider-loc vertical">Male | Maldives</div>
+					<a href="#" class="view-surf__slider-link section__link">
+						view <span>surf</span>
+						<div class="view-surf__slider-rectangle section__link-rectangle"></div>
+					</a>
+				</div>
+				<div class="view-surf__slider-item" style="background-image: url(images/surfSlide-7.jpg)" id="view-7">
+					<h2 class="view-surf__slider-title">Amatola Beach</h2>
+					<div class="view-surf__slider-loc vertical">Amatola | South Africa</div>
+					<a href="#" class="view-surf__slider-link section__link">
+						view <span>surf</span>
+						<div class="view-surf__slider-rectangle section__link-rectangle"></div>
+					</a>
+				</div>
+				<div class="view-surf__slider-item" style="background-image: url(images/surfSlide-8.jpg)" id="view-8">
+					<h2 class="view-surf__slider-title">Guaruja Beach</h2>
+					<div class="view-surf__slider-loc vertical">Guaruja | Brazil</div>
+					<a href="#" class="view-surf__slider-link section__link">
+						view <span>surf</span>
+						<div class="view-surf__slider-rectangle section__link-rectangle"></div>
+					</a>
+				</div>
+			</div>
+		</section>
+
+		<section id="travel" class="travel">
+				<h1 class="travel__title title">Travel</h1>
+				<h2 class="travel__title-subtitle title-subtitle">Travel</h2>
+
+				<div class="travel__inner">
+					<div class="travel__suptitle suptitle">Shore</div>
+					<div id="shore" class="travel__subtitle subtitle">Airlie Beach | Australia</div>
+
+					<div class="travel__slider">
+						<div data-index="0" class="travel__slider-item" style="background-image: url(images/travel-australia.jpg)"></div>
+						<div data-index="1" class="travel__slider-item" style="background-image: url(images/travel-maldives.jpg)"></div>
+						<div data-index="2" class="travel__slider-item" style="background-image: url(images/travel-africa.jpg)"></div>
+						<div data-index="3" class="travel__slider-item" style="background-image: url(images/travel-france.jpg)"></div>
+						<div data-index="4" class="travel__slider-item" style="background-image: url(images/travel-brazil.jpg)"></div>
+						<div data-index="5" class="travel__slider-item" style="background-image: url(images/travel-cuba.jpg)"></div>
+						<div data-index="6" class="travel__slider-item" style="background-image: url(images/travel-usa.jpg)"></div>
+						<div data-index="7" class="travel__slider-item" style="background-image: url(images/travel-hawaii.jpg)"></div>
+					</div>
+					<div class="travel__airline">
+						<div class="travel__airline-suptitle">Airline</div>
+						<div class="travel__airline-title">Virgin Australia</div>
+					</div>
+					<img src="images/plane.png" alt="" class="travel__plane">
+				</div>
+
+				<div class="travel__book-flight">
+					<ul class="book">
+						<li class="book-title">Destination</li>
+						<li id="destination" class="book-text">Queensland Australia</li>
+					</ul>
+					<ul class="book">
+						<li class="book-title">Distance</li>
+						<li id="distance" class="book-text">7,065 Miles</li>
+					</ul>
+					<ul class="book">
+						<li class="book-title">Travel Time</li>
+						<li id="time" class="book-text">23 Hours 5 Minutes</li>
+					</ul>
+					<ul class="book">
+						<li class="book-title">Pricing</li>
+						<li class="book-text">
+							<div id="pricingFlight">$1,976 USD</div>
+							<div class="book-addition">Round Trip</div>
+						</li>
+					</ul>
+				</div>
+				<div class="travel__link">
+					<a href="#" class="section__link">
+						book <span>flight</span>
+						<div class="travel__link-rectangle section__link-rectangle"></div>
+					</a>
+				</div>
+				<img src="images/cocktail.png" alt="" class="travel__cocktail">
+		</section>
+
+		<section id="sleep" class="sleep">
+			<h1 class="sleep__title title">Sleep</h1>
+			<h2 class="sleep__title-subtitle title-subtitle">Sleep</h2>
+
+			<div class="travel__inner">
+					<div class="sleep__suptitle suptitle">Resorts</div>
+					<div id="resort" class="sleep__subtitle subtitle">Auberge | Australia</div>
+
+					<div class="sleep__slider">
+						<div data-index="0" class="sleep__slider-item" style="background-image: url(images/sleep-australia.jpg)"></div>
+						<div data-index="1" class="sleep__slider-item" style="background-image: url(images/sleep-maldives.jpg)"></div>
+						<div data-index="2" class="sleep__slider-item" style="background-image: url(images/sleep-africa.jpg)"></div>
+						<div data-index="3" class="sleep__slider-item" style="background-image: url(images/sleep-france.jpg)"></div>
+						<div data-index="4" class="sleep__slider-item" style="background-image: url(images/sleep-brazil.jpg)"></div>
+						<div data-index="5" class="sleep__slider-item" style="background-image: url(images/sleep-cuba.jpg)"></div>
+						<div data-index="6" class="sleep__slider-item" style="background-image: url(images/sleep-usa.jpg)"></div>
+						<div data-index="7" class="sleep__slider-item" style="background-image: url(images/sleep-hawaii.jpg)"></div>
+					</div>
+					<div class="sleep__rating">
+						<div class="sleep__rating-suptitle">Rating</div>
+						<div class="sleep__rating-title">
+							<span>Excelent</span>
+							<span id="rating" class="sleep__rating-stars">
+								<img src="images/star.svg" alt="" class="sleep__rating-svg">
+								<img src="images/star.svg" alt="" class="sleep__rating-svg">
+								<img src="images/star.svg" alt="" class="sleep__rating-svg">
+								<img src="images/star.svg" alt="" class="sleep__rating-svg">
+								<img src="images/star.svg" alt="" class="sleep__rating-svg">
+							</span>
+						</div>
+					</div>
+					<img src="images/hammock.png" alt="" class="sleep__hammock">
+				</div>
+
+				<div class="sleep__book-stay">
+					<ul class="book">
+						<li class="book-title">Resort</li>
+						<li id="resortSleep" class="book-text">Auberge Australia</li>
+					</ul>
+					<ul class="book">
+						<li class="book-title"># of Nights</li>
+						<li class="book-text">
+							<span id="night" class="night-number">5</span> Nights
+							<div class="book-count">
+								<div id="nightRemove" class="book-remove">-</div>
+								<div id="nightAdd" class="book-add">+</div>
+							</div>
+						</li>
+					</ul>
+					<ul class="book">
+						<li class="book-title"># of Guests</li>
+						<li class="book-text">
+							<span id="guest" class="guest-number">2</span> Guests
+							<div class="book-count">
+								<div id="guestRemove" class="book-remove">-</div>
+								<div id="guestAdd" class="book-add">+</div>
+							</div>
+						</li>
+					</ul>
+					<ul class="book">
+						<li class="book-title">Pricing</li>
+						<li class="book-text">
+							<div id="pricingSleep">$349 USD</div>
+							<div class="book-addition">Per Night</div>
+						</li>
+					</ul>
+				</div>
+				<div class="sleep__link">
+					<a href="#" class="section__link">
+						book <span>stay</span>
+						<div class="sleep__link-rectangle section__link-rectangle"></div>
+					</a>
+				</div>
+				<img src="images/flower.png" alt="" class="sleep__flower">
+		</section>
+
+		<section id="shop" class="shop">
+			<h1 class="sleep__title title">Shop</h1>
+			<h2 class="sleep__title-subtitle title-subtitle">Shop</h2>
+
+			<div class="shop__inner">
+				<div class="shop__descr">
+					<div class="shop__descr-suptitle">Style</div>
+					<div id="shopName" class="shop__descr-title">North Nugget TT Surfboard</div>
+					<div id="shopRating" class="shop__descr-rating">
+						<img src="images/star.svg" alt="" class="shop__descr-svg">
+						<img src="images/star.svg" alt="" class="shop__descr-svg">
+						<img src="images/star.svg" alt="" class="shop__descr-svg">
+						<img src="images/star.svg" alt="" class="shop__descr-svg">
+						<img src="images/star.svg" alt="" class="shop__descr-svg">
+					</div>
+					<div class="shop__descr-price">
+						<span id="shopDollars">$799</span>
+						<span id="shopCoins" class="shop__descr-coins">99</span>
+					</div>
+					<div class="shop__descr-link">
+						<a href="#" class="section__link">
+							drop <span>in</span>
+							<div class="shop__descr-rectangle section__link-rectangle"></div>
+						</a>
+					</div> 
+				</div>
+				<div class="shop__slider">
+					<div data-index="0" class="shop__slider-item">
+						<div class="shop__slider-board" style="background-image: url(images/surfboard-1.png)">
+							<div class="shop__slider-addition">
+								<div class="shop__slider-btn">
+									<span></span>
+								</div>
+								<div class="shop__slider-descr">Double Concave with Vee Shape low point</div>
+							</div>	
+							<div class="shop__slider-addition">
+								<div class="shop__slider-btn">
+									<span></span>
+								</div>
+								<div class="shop__slider-descr">An even curve, nose to tail, full/soft rails</div>
+							</div>	
+							<div class="shop__slider-addition">
+								<div class="shop__slider-btn">
+									<span></span>
+								</div>
+								<div class="shop__slider-descr">This board is for the beginner of all ages</div>
+							</div>							
+						</div>
+						<div class="shop__slider-extras">
+							<div class="shop__extra">
+								<h2 class="shop__extra-title">Extras</h2>
+								<img src="images/sexWax.png" alt="" class="shop__extra-img">
+								<h4 class="shop__extra-name">Sex Wax</h4>
+								<div class="shop__extra-price">$24.99</div>
+							</div>
+							<div class="shop__extra">
+								<img src="images/puraVida-1.png" alt="" class="shop__extra-img">
+								<h4 class="shop__extra-name">Pura Vida</h4>
+								<div class="shop__extra-price">$27.99</div>
+							</div>
+						</div>
+					</div>
+					<div data-index="1" class="shop__slider-item">
+						<div class="shop__slider-board" style="background-image: url(images/surfboard-2.png)">
+							<div class="shop__slider-addition">
+								<div class="shop__slider-btn">
+									<span></span>
+								</div>
+								<div class="shop__slider-descr">Lorem ipsum dolor sit amet consectetur</div>
+							</div>	
+							<div class="shop__slider-addition">
+								<div class="shop__slider-btn">
+									<span></span>
+								</div>
+								<div class="shop__slider-descr">Vel elit nemo animi harum nihil, itaque</div>
+							</div>	
+							<div class="shop__slider-addition">
+								<div class="shop__slider-btn">
+									<span></span>
+								</div>
+								<div class="shop__slider-descr">Nesciunt, ipsam delectus perspiciatis</div>
+							</div>	
+						</div>
+						<div class="shop__slider-extras">
+							<div class="shop__extra">
+								<h2 class="shop__extra-title">Extras</h2>
+								<img src="images/sexWax.png" alt="" class="shop__extra-img">
+								<h4 class="shop__extra-name">Sex Wax</h4>
+								<div class="shop__extra-price">$24.99</div>
+							</div>
+							<div class="shop__extra">
+								<img src="images/puraVida-2.png" alt="" class="shop__extra-img">
+								<h4 class="shop__extra-name">Pura Vida</h4>
+								<div class="shop__extra-price">$27.99</div>
+							</div>
+						</div>
+					</div>
+					<div data-index="2" class="shop__slider-item">
+						<div class="shop__slider-board" style="background-image: url(images/surfboard-3.png)">
+							<div class="shop__slider-addition">
+								<div class="shop__slider-btn">
+									<span></span>
+								</div>
+								<div class="shop__slider-descr">Nesciunt, ipsam delectus perspiciatis</div>
+							</div>	
+							<div class="shop__slider-addition">
+								<div class="shop__slider-btn">
+									<span></span>
+								</div>
+								<div class="shop__slider-descr">Vel elit nemo animi harum nihil, itaque</div>
+							</div>	
+							<div class="shop__slider-addition">
+								<div class="shop__slider-btn">
+									<span></span>
+								</div>
+								<div class="shop__slider-descr">Lorem ipsum dolor sit amet consectetur</div>
+							</div>	
+						</div>
+						<div class="shop__slider-extras">
+							<div class="shop__extra">
+								<h2 class="shop__extra-title">Extras</h2>
+								<img src="images/sexWax.png" alt="" class="shop__extra-img">
+								<h4 class="shop__extra-name">Sex Wax</h4>
+								<div class="shop__extra-price">$24.99</div>
+							</div>
+							<div class="shop__extra">
+								<img src="images/puraVida-3.png" alt="" class="shop__extra-img">
+								<h4 class="shop__extra-name">Pura Vida</h4>
+								<div class="shop__extra-price">$27.99</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+	</div>
+
+
+
+
+
+
+
+
+	<script src="js/slick.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
